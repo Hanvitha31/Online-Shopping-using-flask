@@ -1,2 +1,1 @@
-# ecommerce-flask
-heyy,hii
+# ecommerc
