@@ -1,0 +1,20 @@
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my_app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app:
+  template:
+    metadata:
+      labels:
+        app: my_app
+    spec:
+      containers:
+      - name: my_app
+        image: docker.io/hanvitha2001/my-python-app:latest # Replace with your Docker Hub username and image name
+        ports:
+        - containerPort: 5000
